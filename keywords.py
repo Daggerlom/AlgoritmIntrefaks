@@ -10,10 +10,10 @@ import os
 import re
     
 #загрузка dataset
-with open("data/dataset_public.json", "r", encoding="utf8") as read_file:
+with open("D:/GitHub/AlgoritmIntrefaks/data/dataset_public.json", "r", encoding="utf8") as read_file:
     ng_1_data = json.load(read_file)
 
-with open ('data/stop_ru.txt', 'r', encoding="utf8") as stop_file:
+with open ('D:/GitHub/AlgoritmIntrefaks/data/stop_ru.txt', 'r', encoding="utf8") as stop_file:
     rus_stops = [word.strip() for word in stop_file.readlines()] 
 
 extended_punctuation = string.punctuation + '—»«...'
